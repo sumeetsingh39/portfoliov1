@@ -7,7 +7,7 @@ class Navbar extends Component {
     render() { 
         return ( 
             <React.Fragment>
-                <Menu borderless size="massive">
+                <Menu borderless size="huge" fixed="top">
                 <Menu.Item header>Sumeet</Menu.Item>
                     <Menu.Menu position='right'>
                         <Menu.Item>About</Menu.Item>
