@@ -50,7 +50,7 @@ class About extends Component {
                                     className="vertical-timeline-element--work "
                                     contentStyle={{ background: '#535461', color: '#fff' }}
                                     contentArrowStyle={{ borderRight: '7px solid  #535461' }}
-                                    iconStyle={{ background: '#d6d6e3', color: '#535461','padding-top': '1rem', 'padding-left': '0.2rem' }}
+                                    iconStyle={{ background: '#d6d6e3', color: '#535461',paddingTop: '1rem', paddingLeft: '0.2rem' }}
                                     icon={<Icon  name="briefcase" />}
                                 >
                                     <h3 className="vertical-timeline-element-title">Project Engineer</h3>
@@ -64,7 +64,7 @@ class About extends Component {
                                     className="vertical-timeline-element--work"
                                     contentStyle={{ background: '#7174fe', color: '#fff' }}
                                     contentArrowStyle={{ borderRight: '7px solid  #7174fe' }}
-                                    iconStyle={{ background: '#d6d6e3', color: '#535461' ,'padding-top': '1rem', 'padding-left': '0.2rem'}}
+                                    iconStyle={{ background: '#d6d6e3', color: '#535461' ,paddingTop: '1rem', paddingLeft: '0.2rem'}}
                                     icon={<Icon name="student" />}
                                 >
                                     <h3 className="vertical-timeline-element-title">Bachelor of Engg.</h3>
