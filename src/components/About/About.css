@@ -3,11 +3,11 @@
 }
 
 .vertical-timeline.vertical-timeline-custom-line::before {
-    background: #161515!important;
+    background: #D4D5FE!important;
   }
 
   .vertical-timeline.vertical-timeline-custom-line .vertical-timeline-element--work .vertical-timeline-element-icon {
-    box-shadow: 0 0 0 4px #2a2a2b, inset 0 2px 0 rgba(0, 0, 0, 0.08), 0 3px 0 4px rgba(0, 0, 0, 0.05);
+    box-shadow: 0 0 0 4px #D4D5FE, inset 0 2px 0 rgba(0, 0, 0, 0.08), 0 3px 0 4px rgba(0, 0, 0, 0.05);
   }
   
   .vertical-timeline.vertical-timeline-custom-line .vertical-timeline-element--education .vertical-timeline-element-icon {

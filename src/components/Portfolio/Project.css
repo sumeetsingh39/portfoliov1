@@ -1,6 +1,7 @@
-.card{
+.project-cards{
     display: flex;
     justify-content: center;
     text-align: center;
     align-items: center;
+    background-color: #ececec!important;
 }

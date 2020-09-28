@@ -28,7 +28,7 @@ class About extends Component {
     }
     render() { 
         return ( <React.Fragment>
-            <Segment raised size="big" className="about-page">
+            <Segment inverted={this.props.darkTheme} raised size="big" className="about-page">  
                 <Grid stackable textAlign='center'>
                     <Grid.Row stackable>
                         <Grid.Column width="4">
@@ -44,13 +44,13 @@ class About extends Component {
                     <Divider/>
                     <Grid.Row>
                         <Grid.Column width="8">
-                            <Header>A Breif History</Header>
+                            <Header inverted={this.props.darkTheme}>A Breif History</Header>
                             <VerticalTimeline className="vertical-timeline vertical-timeline-custom-line">
                                 <VerticalTimelineElement
                                     className="vertical-timeline-element--work "
                                     contentStyle={{ background: '#535461', color: '#fff' }}
                                     contentArrowStyle={{ borderRight: '7px solid  #535461' }}
-                                    iconStyle={{ background: '#d6d6e3', color: '#535461',paddingTop: '1rem', paddingLeft: '0.2rem' }}
+                                    iconStyle={{ background: '#D4D5FE', color: '#535461',paddingTop: '1rem', paddingLeft: '0.2rem' }}
                                     icon={<Icon  name="briefcase" />}
                                 >
                                     <h3 className="vertical-timeline-element-title">Project Engineer</h3>
@@ -64,7 +64,7 @@ class About extends Component {
                                     className="vertical-timeline-element--work"
                                     contentStyle={{ background: '#7174fe', color: '#fff' }}
                                     contentArrowStyle={{ borderRight: '7px solid  #7174fe' }}
-                                    iconStyle={{ background: '#d6d6e3', color: '#535461' ,paddingTop: '1rem', paddingLeft: '0.2rem'}}
+                                    iconStyle={{ background: '#D4D5FE', color: '#535461' ,paddingTop: '1rem', paddingLeft: '0.2rem'}}
                                     icon={<Icon name="student" />}
                                 >
                                     <h3 className="vertical-timeline-element-title">Bachelor of Engg.</h3>
@@ -78,7 +78,7 @@ class About extends Component {
                         </Grid.Column>
                         <Divider vertical/>
                         <Grid.Column width="8">
-                            <Header>Languages/Frameworks/Libraries</Header>
+                            <Header inverted={this.props.darkTheme}>Languages/Frameworks/Libraries</Header>
                             <Label.Group >
                                 {this.state.languages.map((language)=>(
                                     <Label key={language} size="huge"><Icon name={language.toLowerCase()}/>{language}</Label> 
@@ -88,6 +88,7 @@ class About extends Component {
                         </Grid.Column>
                     </Grid.Row>
                 </Grid>
+ 
             </Segment>
         </React.Fragment> );
     }

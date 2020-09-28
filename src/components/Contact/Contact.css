@@ -1,5 +1,11 @@
 .contact-page{
     margin-top: 5rem!important;
     margin-bottom: 2rem!important;
-    height: 60vh;
+    min-height: 60vh;
+    
+}
+
+.btn-send{
+    background-color: #7174fe!important;
+    color: white!important;
 }

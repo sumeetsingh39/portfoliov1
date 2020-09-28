@@ -24,7 +24,7 @@ class Portfolio extends Component {
             }
         ];
         return ( <React.Fragment>
-            <Segment raised size="big" className="portfolio-page">
+            <Segment inverted={this.props.darkTheme} raised size="big" className="portfolio-page">
                 <Header>Some Stuffs I worked on..</Header>
                 <Container className="cards-container">
                     <Grid textAlign='center'>
@@ -32,7 +32,7 @@ class Portfolio extends Component {
                             <Card.Group>
                                 {
                                     projects.map((project) => (
-                                            <Project data={project}/>
+                                            <Project darkTheme={this.props.darkTheme} data={project}/>
                                         
                                     ))
                                 }

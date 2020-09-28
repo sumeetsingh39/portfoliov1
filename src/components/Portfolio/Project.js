@@ -10,7 +10,7 @@ class Project extends Component {
     render() { 
         console.log(this.props);
         return ( 
-            <Card>
+            <Card color="grey" className='project-cards'>
                         <Image src={this.props.data.imageURL} alt="Project Image"/>
                         <Card.Content>
                             <Card.Header>{this.props.data.title}</Card.Header>

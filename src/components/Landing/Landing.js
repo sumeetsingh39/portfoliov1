@@ -11,15 +11,15 @@ class Landing extends Component {
     }
     render() { 
         return ( <React.Fragment>
-            <Segment raised size="massive" className="main-page">
+            <Segment inverted={this.props.darkTheme} raised size="massive" className="main-page">
             <Grid columns={2} stackable textAlign='center'>
             <Grid.Row verticalAlign='middle' className="l-content">
                 <Grid.Column>
-                    <Header>Hi, I'm Sumeet Singh</Header>
-                    <Button icon labelPosition='right' color="violet">
+                    <Header inverted={this.props.darkTheme}>Hi, I'm Sumeet Singh</Header>
+                    {/* <Button icon labelPosition='right' className="btn-download">
                         <Icon name='download' />
                         Download Resume
-                    </Button>
+                    </Button> */}
                 </Grid.Column>
                 <Grid.Column>
                     <Image src={coding} type="image/svg+xml" alt='coding' size="big"/>
