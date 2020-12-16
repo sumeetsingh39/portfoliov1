@@ -56,7 +56,7 @@ class About extends Component {
                                     <h3 className="vertical-timeline-element-title">Project Engineer</h3>
                                     <h4 className="vertical-timeline-element-subtitle">Wipro Ltd.</h4>
                                     <p>
-                                    lorem ipsum
+                                    Project Engineer / Web Developer
                                     </p>
                                     <h5>2018-Present</h5>
                                 </VerticalTimelineElement>

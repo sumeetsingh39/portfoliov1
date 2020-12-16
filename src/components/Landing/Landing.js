@@ -20,6 +20,10 @@ class Landing extends Component {
                         <Icon name='download' />
                         Download Resume
                     </Button> */}
+                    {/* <PDFDownloadLink document={<Resume />} fileName="Sumeet.pdf">
+                        {({ blob, url, loading, error }) => (loading ? 'Loading document...' : 'Download now!')}
+                    </PDFDownloadLink> */}
+                    <Button icon labelPosition='right' className="btn-download" href={require("../../assets/Sumeet\'s Resume.pdf")} download="myFile"><Icon name='download' />Download Resume</Button>
                 </Grid.Column>
                 <Grid.Column>
                     <Image src={coding} type="image/svg+xml" alt='coding' size="big"/>
