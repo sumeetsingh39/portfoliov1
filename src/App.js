@@ -9,43 +9,7 @@ import ScrollableAnchor,{ configureAnchors } from 'react-scrollable-anchor';
 
 
 
-// function App() {
-  
-//   const testList = [
-//     {
-//       id: 1,
-//       title: 'Success',
-//       description: 'This is a success toast component',
-//       backgroundColor: '#5cb85c',
-//       icon: 'check'
-//     },
-//     {
-//       id: 2,
-//       title: 'Danger',
-//       description: 'This is an error toast component',
-//       backgroundColor: '#d9534f',
-//       icon: 'exclamation circle'
-//     },
-//     {
-//       id: 3,
-//       title: 'Info',
-//       description: 'This is an info toast component',
-//       backgroundColor: '#5bc0de',
-//       icon: 'info'
-//   },
-//   {
-//       id: 4,
-//       title: 'Warning',
-//       description: 'This is a warning silly component',
-//       backgroundColor: '#f0ad4e',
-//       icon: 'warning sign',
-//       autoDelete: true,
-//       autoDeleteTime: 1000
-//   }
 
-// ];
-
-// }
 
 class App extends Component {
   constructor(props) {
@@ -56,17 +20,30 @@ class App extends Component {
       backgroundColor:'white'
      }
   }
-  
+  componentWillMount = () =>{
+    let darkMode;
+    if (localStorage) {
+        darkMode = localStorage.getItem("darkMode")
+      }
+    
+      if (darkMode === "true" ) {
+        this.setDarkTheme();
+      }
+}
   setDarkTheme = () =>{
 
     if(!this.state.darkTheme){
-      this.setState({backgroundColor:'#1b1c1d'})
+      this.setState({backgroundColor:'#1b1c1d'});
+      localStorage.setItem("darkMode", "true");
     }
     else{
-      this.setState({backgroundColor:'white'})
+      this.setState({backgroundColor:'white'});
+      localStorage.setItem("darkMode", "false");
     }
-    this.setState({darkTheme : !this.state.darkTheme})
-    console.log("Dark theme enabled");
+    this.setState({darkTheme : !this.state.darkTheme},()=>{
+      console.log("Dark theme enabled",this.state);
+    })
+    
   }
   render() {
     const styles = {
@@ -77,7 +54,7 @@ class App extends Component {
     const { containerStyle } = styles; 
     return ( 
       <div className="App" style={containerStyle}>
-      <Navbar darkMode={this.setDarkTheme} />
+      <Navbar darkMode={this.setDarkTheme} darkTheme={this.state.darkTheme}/>
       <ScrollableAnchor id={'home'}>
         <Landing darkTheme={this.state.darkTheme}/>
       </ScrollableAnchor>

@@ -20,9 +20,7 @@ class About extends Component {
                 "Javascript",
                 "Angular",
                 "React",
-                "Python",
-                "Spring Boot",
-                "Django"
+                "Python"
             ]
          }
     }
@@ -36,8 +34,13 @@ class About extends Component {
                         </Grid.Column>
                         <Grid.Column width="12">
                             <h1>Hello, Nice to meet you </h1>
-                            <p>
-                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+                            <p id="about_story">
+                                I am a web developer based in India. 
+                                I am a innovative, result-oriented web developer with 2 years of experience in building beautiful web applications. 
+                                Proficient with React and other JS Frameworks with extensive knowledge of Oracle and other database engines.
+                                Throughout the time I have worked with Wipro, a leading IT services provider.
+                                I am looking to enhance my professional experience with new challenging projects as a web developer.
+
                             </p>
                         </Grid.Column>
                     </Grid.Row>

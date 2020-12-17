@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Card, Image,Label,Icon,Modal,Header,Button } from 'semantic-ui-react';
+import { Card, Image,Label,Icon,Modal,Header,Button, Grid } from 'semantic-ui-react';
 import './Project.css';
 
 class Project extends Component {
@@ -36,20 +36,24 @@ class Project extends Component {
           >
             {/* Modal starts */}
             <Modal.Content image>
-                <Image size='big' src={this.props.data.bigImageUrl} wrapped />
-                <Modal.Description>
-                <h1>{this.props.data.title}</h1>
-                <hr></hr>
-                <Header>Skills Used: </Header>{
-                this.props.data.tools.map((tool)=>(
-                    <Label color="teal" key={tool} size="medium"><Icon name={tool.toLowerCase()}/>{tool}</Label> 
-                ))
-            }
-                <Header>Description:</Header>
-                <p>
-                   {this.props.data.description}
-                </p>
-                </Modal.Description>
+                <Grid stackable>
+                    <Grid.Column width="8">
+                        <Image size='massive' src={this.props.data.bigImageUrl} wrapped />
+                    </Grid.Column>
+                    <Grid.Column width="8">
+                        <Modal.Description>
+                        <h1>{this.props.data.title}</h1>
+                        <hr></hr>
+                        <Header>Skills Used: </Header>{
+                        this.props.data.tools.map((tool)=>(
+                            <Label color="teal" key={tool} size="medium"><Icon name={tool.toLowerCase()}/>{tool}</Label> 
+                        ))
+                    }
+                        <Header className="desc">{this.props.data.description}</Header>
+                        
+                        </Modal.Description>
+                    </Grid.Column>
+                </Grid>
             </Modal.Content>
             <Modal.Actions>
                 <Button color={this.props.data.actionColor} href={this.props.data.url}>

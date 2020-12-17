@@ -20,7 +20,7 @@ class Portfolio extends Component {
                 tools : ['React JS','Semantic UI'],
                 siteURL : false,
                 bigImageUrl: Portfolio_big,
-                description:'',
+                description:'A single page application created with ReactJS and SemanticUI. It\'s a simple portfolio describing who I am.',
                 action:"It's current page",
                 actionColor:"green",
                 url:''
@@ -31,7 +31,7 @@ class Portfolio extends Component {
                 tools : ['Express JS','Mongo DB','Bootstrap','Passport JS'],
                 siteURL : false,
                 bigImageUrl: Yelpcamp_big,
-                description:'',
+                description:'It\'s an application where you can view, add, delete campgrounds. If a campground it already present you can review it and add comments. It has been created with ExpressJS as backed and EJS+HTML as front-end. MongoDB is used for database requirements. For authentication PassportJS has been used.',
                 action:"Not hosted currently",
                 actionColor:"red",
                 url:''
@@ -39,7 +39,7 @@ class Portfolio extends Component {
         ];
         return ( <React.Fragment>
             <Segment inverted={this.props.darkTheme} raised size="big" className="portfolio-page">
-                <Header>Some Stuffs I worked on..</Header>
+                <h1>Some Stuffs I worked on..</h1>
                 <Container className="cards-container">
                     <Grid textAlign='center'>
                         <Grid.Row verticalAlign='middle' >
@@ -54,6 +54,10 @@ class Portfolio extends Component {
                         </Grid.Row>
                     </Grid>
                 </Container>
+                <br/><br/><br/>
+                <hr className="hr-text"/>
+                <span id="quote">Quality is more important than quantity. One home run is much better than two doubles.</span>
+                <hr className="hr-text"/>
             </Segment>
         </React.Fragment> );
     }

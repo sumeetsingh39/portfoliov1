@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { Header, Segment, Form, Container, TextArea,Grid, Icon, Button, Message } from 'semantic-ui-react';
 import './Contact.css';
+import  emailjs,{init} from 'emailjs-com';
 import contactImage from '../../assets/undraw_contact_us_15o2.svg';
 
 class Contact extends Component {
@@ -10,20 +11,34 @@ class Contact extends Component {
             name :'',
             email : '',
             message :'',
+            subject:'',
             status:'nothing'
          }
     }
     handleChange = (e, { name, value }) => this.setState({ [name]: value })
 
-    handleSubmit = () => {
-      const { name, email, message } = this.state;
-      this.setState({status : 'success'});
+    handleSubmit = (e) => {
+        e.preventDefault();
+      const { name, subject,email, message } = this.state;
+       
+    //    init("user_Du03q5Ux63JUpJZFTmGh7");   
+       emailjs.sendForm('service_8f4f9vz','template_sfd3ifx', e.target,'user_Du03q5Ux63JUpJZFTmGh7')
+       .then((response) => {
+          console.log('SUCCESS!', response.status, response.text);
+          this.handleReset();
+          this.setState({status : 'success'});
+       }, (err) => {
+          console.log('FAILED...', err);
+          this.setState({status : 'failed'});
+       });
+  
     }
-    handleReset = () =>{
+    handleReset = (e) =>{
         this.setState({
             name :'',
             email : '',
             message :'',
+            subject:'',
             status:''
 
         });
@@ -50,11 +65,12 @@ class Contact extends Component {
     render() { 
         return ( 
             <Segment inverted={this.props.darkTheme} raised size="big" className="contact-page">
-                <Header>If you want to reach me..</Header>
+                <h1>If you want to reach me..</h1>
                 <Container textAlign="left">
-                    <Form inverted={this.props.darkTheme}>
-                            <Form.Input label='Name' placeholder='Name' name="name" onChange={this.handleChange} value={this.state.name}/>
-                         <Form.Input label='Email ID' placeholder='Email ID' type="email" name="email" onChange={this.handleChange} value={this.state.email}/>
+                    <Form inverted={this.props.darkTheme} onSubmit={this.handleSubmit}>
+                        <Form.Input label='Name' placeholder='Name' name="name" onChange={this.handleChange} value={this.state.name}/>
+                        <Form.Input label='Email ID' placeholder='Email ID' type="email" name="email" onChange={this.handleChange} value={this.state.email}/>
+                        <Form.Input label='Subject' placeholder='Subject' name="subject" onChange={this.handleChange} value={this.state.subject}/>
                         <Form.Field
                             id='form-textarea-control-opinion'
                             control={TextArea}
@@ -65,9 +81,11 @@ class Contact extends Component {
                             onChange={this.handleChange}
                             style={{ minHeight: 100, maxHeight: 170 }}
                         />
-                            <Button content='Send' className="btn-send" onClick={this.handleSubmit}/>
-                            <Button onClick={this.handleReset}>Reset</Button>
+                            <Button content='Send' type="submit" className="btn-send" size="large"/>
+                            <Button type="button" size="large" onClick={this.handleReset}>Reset</Button>
                     </Form>
+                    
+                    
                     {
                         this.handleMessage()
                     }
