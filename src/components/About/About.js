@@ -36,9 +36,9 @@ class About extends Component {
                             <h1>Hello, Nice to meet you </h1>
                             <p id="about_story">
                                 I am a web developer based in India. 
-                                I am a innovative, result-oriented web developer with 2 years of experience in building beautiful web applications. 
+                                I am an innovative, result-oriented web developer with 2 years of experience in building beautiful web applications. 
                                 Proficient with React and other JS Frameworks with extensive knowledge of Oracle and other database engines.
-                                Throughout the time I have worked with Wipro, a leading IT services provider.
+                                Throughout this time I have worked with Wipro, a leading IT services provider.
                                 I am looking to enhance my professional experience with new challenging projects as a web developer.
 
                             </p>
@@ -71,7 +71,7 @@ class About extends Component {
                                     icon={<Icon name="student" />}
                                 >
                                     <h3 className="vertical-timeline-element-title">Bachelor of Engg.</h3>
-                                    <h4 className="vertical-timeline-element-subtitle">Information Tecnology</h4>
+                                    <h4 className="vertical-timeline-element-subtitle">Information Technology</h4>
                                     <p>
                                     Government College of Engineering, Karad
                                     </p>
