@@ -36,7 +36,7 @@ class About extends Component {
                             <h1>Hello, Nice to meet you </h1>
                             <p id="about_story">
                                 I am a web developer based in India. 
-                                I am an innovative, result-oriented web developer with 2 years of experience in building beautiful web applications. 
+                                I am an innovative, result-oriented web developer with 3 years of experience in building beautiful web applications. 
                                 Proficient with React and other JS Frameworks with extensive knowledge of Oracle and other database engines.
                                 Throughout this time I have worked with Wipro, a leading IT services provider.
                                 I am looking to enhance my professional experience with new challenging projects as a web developer.
