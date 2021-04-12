@@ -1,27 +1,27 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "64541cdb5e91a73fc4476699d3af07aa",
+    "revision": "bfc5b3c264c5c37f489b0954800733f4",
     "url": "/portfoliov1/index.html"
   },
   {
-    "revision": "384d12a86e236537dc84",
+    "revision": "e1f16853921610b9facf",
     "url": "/portfoliov1/static/css/2.70ce2e8c.chunk.css"
   },
   {
-    "revision": "133859c2df2f88572637",
-    "url": "/portfoliov1/static/css/main.ba2cee92.chunk.css"
+    "revision": "4563eb078ca5281c5460",
+    "url": "/portfoliov1/static/css/main.39c86018.chunk.css"
   },
   {
-    "revision": "384d12a86e236537dc84",
-    "url": "/portfoliov1/static/js/2.a14ef578.chunk.js"
+    "revision": "e1f16853921610b9facf",
+    "url": "/portfoliov1/static/js/2.13b42317.chunk.js"
   },
   {
     "revision": "a7ced352984eaea62c27483dbc13303e",
-    "url": "/portfoliov1/static/js/2.a14ef578.chunk.js.LICENSE.txt"
+    "url": "/portfoliov1/static/js/2.13b42317.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "133859c2df2f88572637",
-    "url": "/portfoliov1/static/js/main.2c39f7ab.chunk.js"
+    "revision": "4563eb078ca5281c5460",
+    "url": "/portfoliov1/static/js/main.f1575631.chunk.js"
   },
   {
     "revision": "55378f612cb0993a7473",
@@ -36,8 +36,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/portfoliov1/static/media/Portfolio_small.e2f7ae0f.JPG"
   },
   {
-    "revision": "ea89569ab12c03ccb66a03c6ad92f6e4",
-    "url": "/portfoliov1/static/media/Sumeet's Resume.ea89569a.pdf"
+    "revision": "5c7b4da8ef9429e41e0fe4fbda73a2d0",
+    "url": "/portfoliov1/static/media/Sumeet's Resume.5c7b4da8.pdf"
   },
   {
     "revision": "7cfbda7c6c98a9c0d59600c9141aee60",
@@ -90,6 +90,14 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "faff92145777a3cbaf8e7367b4807987",
     "url": "/portfoliov1/static/media/icons.faff9214.woff"
+  },
+  {
+    "revision": "ebde38bb7f0c9d2717d5d3995f1e1265",
+    "url": "/portfoliov1/static/media/natours.ebde38bb.JPG"
+  },
+  {
+    "revision": "73dbfa90aec19866da730f042758702b",
+    "url": "/portfoliov1/static/media/natourssm.73dbfa90.JPG"
   },
   {
     "revision": "701ae6abd4719e9c2ada3535a497b341",
