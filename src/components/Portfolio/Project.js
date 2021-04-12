@@ -10,7 +10,7 @@ class Project extends Component {
          }
     }
     render() { 
-        console.log(this.props);
+        // console.log(this.props);
         return ( 
             <React.Fragment>
             
@@ -21,7 +21,7 @@ class Project extends Component {
             dimmer="blurring"
             size="large"
             trigger={<Card color="grey" className='project-cards'>
-            <Image type="image/svg+xml" src={this.props.data.imageUrl} alt="Project Image" bordered="none"/>
+            <Image type="image/svg+xml" src={this.props.data.imageUrl} alt="Project Image" bordered="none" className="image-portfolio"/>
             <Card.Content>
                 <Card.Header>{this.props.data.title}</Card.Header>
             

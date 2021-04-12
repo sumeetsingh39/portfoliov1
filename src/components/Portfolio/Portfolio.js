@@ -6,6 +6,8 @@ import Portfolio_small from '../../assets/Portfolio_small.JPG';
 import Yelpcamp_small from '../../assets/Yelpcamp_small.JPG';
 import Portfolio_big from '../../assets/Portfolio_full.JPG';
 import Yelpcamp_big from '../../assets/Yelpcamp_full.JPG';
+import Natours_big from '../../assets/natours.JPG';
+import Natours_small from '../../assets/natourssm.JPG';
 
 class Portfolio extends Component {
     constructor(props) {
@@ -35,6 +37,17 @@ class Portfolio extends Component {
                 action:"Not hosted currently",
                 actionColor:"red",
                 url:''
+            },
+            {
+                imageUrl : Natours_small,
+                title : 'Natours',
+                tools : ['HTML','SASS'],
+                siteURL : false,
+                bigImageUrl: Natours_big,
+                description:'A single page application created to showcase SASS usage. A beautiful page for any Natours travel agency;',
+                action:"Visit Site",
+                actionColor:"green",
+                url:'https://sumeetsingh39.github.io/Natours/index.html'
             }
         ];
         return ( <React.Fragment>
