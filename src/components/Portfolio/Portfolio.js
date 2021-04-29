@@ -8,6 +8,8 @@ import Portfolio_big from '../../assets/Portfolio_full.JPG';
 import Yelpcamp_big from '../../assets/Yelpcamp_full.JPG';
 import Natours_big from '../../assets/natours.JPG';
 import Natours_small from '../../assets/natourssm.JPG';
+import Covid_big from '../../assets/covid_full.JPG';
+import Covid_small from '../../assets/covidsm.JPG';
 
 class Portfolio extends Component {
     constructor(props) {
@@ -42,12 +44,23 @@ class Portfolio extends Component {
                 imageUrl : Natours_small,
                 title : 'Natours',
                 tools : ['HTML','SASS'],
-                siteURL : false,
+                siteURL : true,
                 bigImageUrl: Natours_big,
                 description:'A single page application created to showcase SASS usage. A beautiful page for any Natours travel agency;',
                 action:"Visit Site",
                 actionColor:"green",
                 url:'https://sumeetsingh39.github.io/Natours/index.html'
+            },
+            {
+                imageUrl :Covid_small,
+                title : 'Covid Tracker',
+                tools : ['React','Semantic UI'],
+                siteURL : true,
+                bigImageUrl: Covid_big,
+                description:'A simple Covid-19 tracker for the world. Map and Graph displaying data accordingly',
+                action:"Visit Site",
+                actionColor:"green",
+                url:'https://covid-19-tracker-f57fd.web.app/'
             }
         ];
         return ( <React.Fragment>
