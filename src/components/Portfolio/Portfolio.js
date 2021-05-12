@@ -10,6 +10,8 @@ import Natours_big from '../../assets/natours.JPG';
 import Natours_small from '../../assets/natourssm.JPG';
 import Covid_big from '../../assets/covid_full.JPG';
 import Covid_small from '../../assets/covidsm.JPG';
+import TermCon_big from '../../assets/terminalbig.JPG';
+import TermCon_small from '../../assets/terminalsmall.JPG';
 
 class Portfolio extends Component {
     constructor(props) {
@@ -61,6 +63,17 @@ class Portfolio extends Component {
                 action:"Visit Site",
                 actionColor:"green",
                 url:'https://covid-19-tracker-f57fd.web.app/'
+            },
+            {
+                imageUrl :TermCon_small,
+                title : 'Contact and Links Terminal Style',
+                tools : ['HTML','CSS','Javascript','Winbox.js'],
+                siteURL : true,
+                bigImageUrl: TermCon_big,
+                description:'A elegant page containg little about me and links in terminal style',
+                action:"Visit Site",
+                actionColor:"green",
+                url:'https://sumeetsingh39.github.io/Terminal_Contact/'
             }
         ];
         return ( <React.Fragment>
