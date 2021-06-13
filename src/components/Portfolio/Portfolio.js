@@ -80,18 +80,14 @@ class Portfolio extends Component {
             <Segment inverted={this.props.darkTheme} raised size="big" className="portfolio-page">
                 <h1>Some Stuffs I worked on..</h1>
                 <Container className="cards-container">
-                    <Grid textAlign='center'>
-                        <Grid.Row verticalAlign='middle' >
-                            <Card.Group>
-                                {
-                                    projects.map((project) => (
-                                            <Project darkTheme={this.props.darkTheme} data={project}/>
-                                        
-                                    ))
-                                }
-                            </Card.Group>
-                        </Grid.Row>
-                    </Grid>
+                    <div className="container-projects">
+                        {
+                            projects.map((project) => (
+                                    <Project darkTheme={this.props.darkTheme} data={project}/>
+                                
+                            ))
+                        }
+                    </div>
                 </Container>
                 <br/><br/><br/>
                 <hr className="hr-text"/>

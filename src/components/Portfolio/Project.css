@@ -1,23 +1,257 @@
-.ui.cards>.grey.card, .ui.grey.card,.project-cards{
+.project-container {
+  position: relative;
+  height: 35rem;
+}
+
+.project-inner {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 4rem 0;
+}
+
+.project-container .project-inner .text-part {
+  width: 50%;
+  text-align: left;
+  padding-right: 2rem;
+  hyphens: auto;
+}
+
+.project-container .project-inner .image-part {
+  width: 50%;
+}
+.project-outer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 4rem 0;
+  background: rgb(83, 84, 97);
+  background: linear-gradient(
+    90deg,
+    rgba(83, 84, 97, 0.8687850140056023) 100%,
+    rgba(113, 116, 254, 0.5466561624649859) 100%
+  );
+  border-radius: 8px;
+  transition: all 0.4s ease-in;
+  /* display: none; */
+  opacity: 0;
+  font-size: 2rem;
+}
+
+.project-container:hover .project-outer {
+  /* display: block; */
+  opacity: 1;
+}
+
+.project-container .project-outer .skills {
+  color: white;
+  font-size: 2.2rem;
+  font-weight: 700;
+  line-height: 1.3;
+  padding: 2rem;
+  text-align: left;
+  mix-blend-mode: luminosity;
+}
+
+.project-container .project-outer .skills span {
+  padding: 0 1rem;
+  font-size: 2rem;
+  font-weight: 400;
+}
+
+.project-container .project-outer .linking {
+  align-self: flex-end;
+  padding: 5rem;
+}
+
+/* .project-container .project-outer .linking a {
+  list-style: none;
+  color: white;
+  mix-blend-mode: luminosity;
+} */
+
+.project-container .project-outer .linking a:link,
+.project-container .project-outer .linking a:visited {
+  /* font-size: $default-font-size; */
+  color: white;
+  display: inline-block;
+  text-decoration: none;
+  border-bottom: 1px solid #7174fe;
+  padding: 9px;
+  transition: all 0.2s;
+}
+
+.project-container .project-outer .linking a:hover {
+  background-color: #7174fe;
+  color: white;
+  box-shadow: 0 1rem 2rem rgba(black, 0.15);
+  border-radius: 5px;
+  transform: translateY(-2px);
+}
+
+.project-container .project-outer .linking a:active {
+  box-shadow: 0 0.5rem 1rem rgba(black, 0.15);
+  transform: translateY(0);
+}
+
+.project-container .project-outer .linking span {
+  /* font-size: $default-font-size; */
+  color: white;
+  display: inline-block;
+  text-decoration: none;
+  border-bottom: 1px solid red;
+  padding: 9px;
+  transition: all 0.2s;
+}
+
+.project-container .project-outer .linking span:hover {
+  background-color: red;
+  color: white;
+  box-shadow: 0 1rem 2rem rgba(black, 0.15);
+  border-radius: 5px;
+  transform: translateY(-2px);
+}
+
+@media only screen and (max-width: 768px) {
+  .project-container {
+    position: relative;
+    height: 35rem;
+  }
+
+  .project-inner {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    right: 0;
+    bottom: 0;
     display: flex;
-    justify-content: center;
-    text-align: center;
     align-items: center;
-    box-shadow: 0px 10px 13px -7px #000000, 7px 6px 12px -4px rgba(168,168,168,0.5)!important;
-}
+    justify-content: space-between;
+    margin: 4rem 0;
+  }
 
-.project-cards:hover{
+  .project-container .project-inner .text-part {
+    width: 50%;
+    text-align: left;
+    padding-right: 2rem;
+    hyphens: auto;
+  }
 
-    z-index: 100;
-    -webkit-box-shadow: 0px 10px 13px -7px #000000, 7px 6px 12px -4px rgba(168,168,168,0.5); 
-    box-shadow: 0px 14px 17px -7px #000000, 11px 10px 16px -4px rgba(168,168,168,0.5)!important;
+  .project-container .project-inner .image-part {
+    width: 50%;
+  }
+  .project-outer {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 4rem 0;
+    background: rgb(83, 84, 97);
+    background: linear-gradient(
+      90deg,
+      rgba(83, 84, 97, 0.8687850140056023) 100%,
+      rgba(113, 116, 254, 0.5466561624649859) 100%
+    );
+    border-radius: 8px;
+    transition: all 0.4s ease-in;
+    /* display: none; */
+    opacity: 0;
+    font-size: 2rem;
+  }
 
-}
+  .project-container:hover .project-outer {
+    /* display: block; */
+    opacity: 1;
+  }
 
-.image-portfolio{
+  .project-container .project-outer .skills {
+    color: white;
+    font-size: 2.2rem;
+    font-weight: 700;
+    line-height: 1.3;
+    padding: 2rem;
+    text-align: left;
+    mix-blend-mode: luminosity;
+  }
 
-    height: 18rem;
-    width: 22rem;
-    /* padding: 4px 2px; */
+  .project-container .project-outer .skills span {
+    padding: 0 1rem;
+    font-size: 2rem;
+    font-weight: 400;
+  }
 
+  .project-container .project-outer .linking {
+    align-self: flex-end;
+    padding: 5rem;
+  }
+
+  /* .project-container .project-outer .linking a {
+        list-style: none;
+        color: white;
+        mix-blend-mode: luminosity;
+      } */
+
+  .project-container .project-outer .linking a:link,
+  .project-container .project-outer .linking a:visited {
+    /* font-size: $default-font-size; */
+    color: white;
+    display: inline-block;
+    text-decoration: none;
+    border-bottom: 1px solid #7174fe;
+    padding: 9px;
+    transition: all 0.2s;
+  }
+
+  .project-container .project-outer .linking a:hover {
+    background-color: #7174fe;
+    color: white;
+    box-shadow: 0 1rem 2rem rgba(black, 0.15);
+    border-radius: 5px;
+    transform: translateY(-2px);
+  }
+
+  .project-container .project-outer .linking a:active {
+    box-shadow: 0 0.5rem 1rem rgba(black, 0.15);
+    transform: translateY(0);
+  }
+
+  .project-container .project-outer .linking span {
+    /* font-size: $default-font-size; */
+    color: white;
+    display: inline-block;
+    text-decoration: none;
+    border-bottom: 1px solid red;
+    padding: 9px;
+    transition: all 0.2s;
+  }
+
+  .project-container .project-outer .linking span:hover {
+    background-color: red;
+    color: white;
+    box-shadow: 0 1rem 2rem rgba(black, 0.15);
+    border-radius: 5px;
+    transform: translateY(-2px);
+  }
 }

@@ -30,7 +30,7 @@ class About extends Component {
                 <Grid stackable textAlign='center'>
                     <Grid.Row stackable>
                         <Grid.Column width="4">
-                            <Image src={designer} type="image/svg+xml" alt='coding' size="medium"/>
+                            <Image src={designer} type="image/svg+xml" alt='coding' size="medium" className="image-about"/>
                         </Grid.Column>
                         <Grid.Column width="12">
                             <h1>Hello, Nice to meet you </h1>
