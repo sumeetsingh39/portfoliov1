@@ -6,6 +6,7 @@ import About from './components/About/About';
 import Portfolio from './components/Portfolio/Portfolio';
 import Contact from './components/Contact/Contact';
 import ScrollableAnchor,{ configureAnchors } from 'react-scrollable-anchor';
+import { Message } from 'semantic-ui-react';
 
 
 
@@ -54,6 +55,7 @@ class App extends Component {
     const { containerStyle } = styles; 
     return ( 
       <div className="App" style={containerStyle}>
+        
       <Navbar darkMode={this.setDarkTheme} darkTheme={this.state.darkTheme}/>
       <ScrollableAnchor id={'home'}>
         <Landing darkTheme={this.state.darkTheme}/>
